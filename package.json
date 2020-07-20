@@ -1,0 +1,38 @@
+{
+  "name": "overscrap",
+  "version": "1.0.0",
+  "description": "Scrapping player stats from the official blizzzard overwatch website",
+  "main": "jest.config.js",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "eslint src/ --ext .ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OverBind/OverScrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OverBind/OverScrap/issues"
+  },
+  "homepage": "https://github.com/OverBind/OverScrap#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "eslint": "^7.3.1",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "puppeteer": "^5.2.0"
+  }
+}
