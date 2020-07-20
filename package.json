@@ -24,6 +24,7 @@
   "homepage": "https://github.com/OverBind/OverScrap#readme",
   "devDependencies": {
     "@types/jest": "^26.0.3",
+    "@types/puppeteer": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "^3.4.0",
     "@typescript-eslint/parser": "^3.4.0",
     "eslint": "^7.3.1",
