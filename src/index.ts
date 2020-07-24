@@ -1,5 +1,7 @@
 import puppeteer from 'puppeteer';
 
+import { User } from './types';
+
 // Get sr data for each role
 /*
   Array.from(document.querySelectorAll("div.masthead-player div.competitive-rank-role")).map(rank => ({
@@ -93,6 +95,8 @@ Array.from(
   ).map(col => col.innerText)
 */
 
+// Puppeteer
+/*
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
@@ -101,3 +105,12 @@ Array.from(
 
   await browser.close();
 })();
+*/
+
+const OverScrap = (
+  username: string,
+  hashtag: string,
+  platform: string
+): User | undefined => undefined;
+
+export default OverScrap;

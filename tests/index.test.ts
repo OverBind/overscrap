@@ -1,7 +1,9 @@
-const player = { username: 'GorillaPunch' };
+import OverScrap from '../src';
+
+import { GorillaPunch } from './mocks';
 
 describe('Retrieve player data from the overwatch website', () => {
-  test('Get Competive time played', () => {
-    expect(player.username).toBe('GorillaPunch');
+  test('Should get player "GorillaPunch"', () => {
+    expect(OverScrap('GorillaPunch', '21397', 'pc')).toBe(GorillaPunch);
   });
 });
