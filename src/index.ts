@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-import { User } from './types';
+import { User, Rank } from './types';
 
 // Get sr data for each role
 /*
@@ -107,10 +107,49 @@ Array.from(
 })();
 */
 
-const OverScrap = (
+const OverScrap = async (
   username: string,
   hashtag: string,
-  platform: string
-): User | undefined => undefined;
+  platform: string,
+  test?: string
+): Promise<User> => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  const url = `https://playoverwatch.com/en-us/career/${platform}/${username}-${hashtag}/`;
+  if (test) {
+    await page.setContent(test);
+  } else {
+    await page.goto(url);
+  }
+
+  const ranks: Rank[] = await page.evaluate(() => {
+    return Array.from(
+      document.querySelectorAll(
+        'div.masthead-player div.competitive-rank-role'
+      ),
+      (rank) => ({
+        src: rank?.querySelector<HTMLInputElement>(
+          'img.competitive-rank-tier-icon'
+        )?.src,
+        role: rank
+          ?.querySelector<HTMLInputElement>('span.ow-Tooltip')
+          ?.innerText.replace(/ .*/, ''),
+        sr: rank?.querySelector<HTMLInputElement>('div.competitive-rank-level')
+          ?.innerText
+      })
+    );
+  });
+
+  await browser.close();
+
+  return {
+    username,
+    hashtag,
+    compTime: '',
+    ranks,
+    games: [],
+    topThree: []
+  };
+};
 
 export default OverScrap;

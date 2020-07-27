@@ -1,24 +1,24 @@
 export type User = {
   username: string;
-  hastag: string;
+  hashtag: string;
   compTime: string;
   ranks: Rank[];
   games: Game[];
   topThree: Hero[];
 };
 
-type Rank = {
-  src: string;
-  role: string;
-  sr: string;
+export type Rank = {
+  src?: string;
+  role?: string;
+  sr?: string;
 };
 
-type Game = {
+export type Game = {
   info: string;
   value: string;
 };
 
-type Hero = {
+export type Hero = {
   src: string;
   name: string;
   timePlayed: string;

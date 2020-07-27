@@ -2,14 +2,13 @@ import { User } from '../../src/types';
 
 export const GorillaPunch: User = {
   username: 'GorillaPunch',
-  hastag: '21397',
+  hashtag: '21397',
   compTime: '05:02:36',
   ranks: [
     {
-      src:
-        'https://d1u1mce87gyfbn.cloudfront.net/game/rank-icons/rank-DiamondTier.png',
+      src: '',
       role: 'Tank',
-      sr: '3266'
+      sr: '3227'
     }
   ],
   games: [

@@ -10,7 +10,8 @@
     "lint": "eslint src/ --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:fix": "jest --runInBand --detectOpenHandles"
   },
   "repository": {
     "type": "git",
