@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-import { User, Rank, Hero } from './types';
+import { User, Rank, Hero, Info } from './types';
 
 const HERO_GAME_LOST = '0x0860000000000430';
 const HERO_GAME_WON = '0x0860000000000039';
@@ -11,6 +11,13 @@ const COMP_TIME_PLAY = '0x0860000000000026';
 const COMP_GAME_LOST = '0x086000000000042E';
 const COMP_GAME_WON = '0x08600000000003F5';
 const COMP_GAME_TOTAL = '0x0860000000000385';
+
+const COMP_DATA_ARRAY = [
+  COMP_TIME_PLAY,
+  COMP_GAME_LOST,
+  COMP_GAME_WON,
+  COMP_GAME_TOTAL
+];
 
 const OverScrap = async (
   username: string,
@@ -64,21 +71,26 @@ const OverScrap = async (
   });
 
   // Get competive time played time
-  const compTime: string[] = await page.evaluate((COMP_TIME_PLAY) => {
-    const row = Array.from(
-      document.querySelectorAll(`tr[data-stat-id = '${COMP_TIME_PLAY}']`)
-    );
-    return Array.from(row[1].children, (td) => td.innerHTML);
-  }, COMP_TIME_PLAY);
+  const info: Info[] = await page.evaluate((COMP_DATA_ARRAY) => {
+    return COMP_DATA_ARRAY.map((dataId: string) => {
+      const row = Array.from(
+        document.querySelectorAll(`tr[data-stat-id = '${dataId}']`)
+      );
+      const data = Array.from(row[1].children, (td) => td.innerHTML);
+      return {
+        detail: data[0],
+        value: data[1]
+      };
+    });
+  }, COMP_DATA_ARRAY);
 
   await browser.close();
 
   return {
     username,
     hashtag,
-    compTime,
     ranks,
-    games: [],
+    info,
     topThree
   };
 };

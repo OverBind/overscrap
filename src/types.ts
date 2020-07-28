@@ -1,9 +1,8 @@
 export type User = {
   username: string;
   hashtag: string;
-  compTime: string[];
   ranks: Rank[];
-  games: Game[];
+  info: Info[];
   topThree: Hero[];
 };
 
@@ -13,8 +12,8 @@ export type Rank = {
   sr?: string;
 };
 
-export type Game = {
-  info: string;
+export type Info = {
+  detail: string;
   value: string;
 };
 
@@ -22,5 +21,5 @@ export type Hero = {
   src?: string;
   name?: string;
   timePlayed?: string;
-  games?: Game[];
+  info?: Info[];
 };

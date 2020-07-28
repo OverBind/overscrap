@@ -3,7 +3,6 @@ import { User } from '../../src/types';
 export const GorillaPunch: User = {
   username: 'GorillaPunch',
   hashtag: '21397',
-  compTime: ['Time Played', '05:51:42'],
   ranks: [
     {
       src: '',
@@ -11,17 +10,21 @@ export const GorillaPunch: User = {
       sr: '3227'
     }
   ],
-  games: [
+  info: [
     {
-      info: 'Games Lost',
+      detail: 'Time Played',
+      value: '05:51:42'
+    },
+    {
+      detail: 'Games Lost',
       value: '13'
     },
     {
-      info: 'Games Played',
+      detail: 'Games Played',
       value: '26'
     },
     {
-      info: 'Games Won',
+      detail: 'Games Won',
       value: '12'
     }
   ],
@@ -31,13 +34,13 @@ export const GorillaPunch: User = {
         'https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000023B.png',
       name: 'Sigma',
       timePlayed: '01:51:14',
-      games: [
+      info: [
         {
-          info: 'Games Played',
+          detail: 'Games Played',
           value: '13'
         },
         {
-          info: 'Win Percentage',
+          detail: 'Win Percentage',
           value: '69%'
         }
       ]
@@ -47,13 +50,13 @@ export const GorillaPunch: User = {
         'https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000009.png',
       name: 'Winston',
       timePlayed: '01:01:08',
-      games: [
+      info: [
         {
-          info: 'Games Played',
+          detail: 'Games Played',
           value: '5'
         },
         {
-          info: 'Win Percentage',
+          detail: 'Win Percentage',
           value: '37%'
         }
       ]
@@ -63,13 +66,13 @@ export const GorillaPunch: User = {
         'https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000007.png',
       name: 'Reinhardt',
       timePlayed: '35:38',
-      games: [
+      info: [
         {
-          info: 'Games Played',
+          detail: 'Games Played',
           value: '3'
         },
         {
-          info: 'Win Percentage',
+          detail: 'Win Percentage',
           value: '41%'
         }
       ]
