@@ -1,7 +1,7 @@
 export type User = {
   username: string;
   hashtag: string;
-  compTime: string;
+  compTime: string[];
   ranks: Rank[];
   games: Game[];
   topThree: Hero[];
@@ -19,8 +19,8 @@ export type Game = {
 };
 
 export type Hero = {
-  src: string;
-  name: string;
-  timePlayed: string;
-  games: Game[];
+  src?: string;
+  name?: string;
+  timePlayed?: string;
+  games?: Game[];
 };

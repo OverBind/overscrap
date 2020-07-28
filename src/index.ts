@@ -1,27 +1,89 @@
 import puppeteer from 'puppeteer';
 
-import { User, Rank } from './types';
+import { User, Rank, Hero } from './types';
 
-// Get sr data for each role
-/*
-  Array.from(document.querySelectorAll("div.masthead-player div.competitive-rank-role")).map(rank => ({
-    src: rank.querySelector("img.competitive-rank-tier-icon").src,
-    role: rank.querySelector("span.ow-Tooltip").innerText,
-    sr: rank.querySelector("div.competitive-rank-level").innerText
-  }))
-*/
+const HERO_GAME_LOST = '0x0860000000000430';
+const HERO_GAME_WON = '0x0860000000000039';
+const HERO_GAME_TOTAL = '0x0860000000000038';
+const HERO_WIN_PERCENTAGE = '0x08600000000003D1';
 
-// Get top 3 heroes
-/*
-Array.from(document.querySelectorAll("div#competitive div.progress-category-item"))
-  .slice(0, 3)
-  .map(hero => ({
-    src: hero.querySelector("img.ProgressBar-thumb").src,
-    name: hero.querySelector("div.ProgressBar-title").innerText,
-    timePlayed: hero.querySelector("div.ProgressBar-description").innerText
-  })
-)
-*/
+const COMP_TIME_PLAY = '0x0860000000000026';
+const COMP_GAME_LOST = '0x086000000000042E';
+const COMP_GAME_WON = '0x08600000000003F5';
+const COMP_GAME_TOTAL = '0x0860000000000385';
+
+const OverScrap = async (
+  username: string,
+  hashtag: string,
+  platform: string,
+  test?: string
+): Promise<User> => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  const url = `https://playoverwatch.com/en-us/career/${platform}/${username}-${hashtag}/`;
+
+  if (test) {
+    await page.setContent(test);
+  } else {
+    await page.goto(url);
+  }
+
+  // Get player SR by roles
+  const ranks: Rank[] = await page.evaluate(() => {
+    return Array.from(
+      document.querySelectorAll(
+        'div.masthead-player div.competitive-rank-role'
+      ),
+      (rank) => ({
+        src: rank.querySelector<HTMLInputElement>(
+          'img.competitive-rank-tier-icon'
+        )?.src,
+        role: rank
+          .querySelector<HTMLInputElement>('span.ow-Tooltip')
+          ?.innerText.replace(/ .*/, ''),
+        sr: rank.querySelector<HTMLInputElement>('div.competitive-rank-level')
+          ?.innerText
+      })
+    );
+  });
+
+  // Get top three most played heroes this season
+  const topThree: Hero[] = await page.evaluate(() => {
+    return Array.from(
+      document.querySelectorAll('div#competitive div.progress-category-item')
+    )
+      .slice(0, 3)
+      .map((hero) => ({
+        src: hero.querySelector<HTMLInputElement>('img.ProgressBar-thumb')?.src,
+        name: hero.querySelector<HTMLInputElement>('div.ProgressBar-title')
+          ?.innerText,
+        timePlayed: hero.querySelector<HTMLInputElement>(
+          'div.ProgressBar-description'
+        )?.innerText
+      }));
+  });
+
+  // Get competive time played time
+  const compTime: string[] = await page.evaluate((COMP_TIME_PLAY) => {
+    const row = Array.from(
+      document.querySelectorAll(`tr[data-stat-id = '${COMP_TIME_PLAY}']`)
+    );
+    return Array.from(row[1].children, (td) => td.innerHTML);
+  }, COMP_TIME_PLAY);
+
+  await browser.close();
+
+  return {
+    username,
+    hashtag,
+    compTime,
+    ranks,
+    games: [],
+    topThree
+  };
+};
+
+export default OverScrap;
 
 // Get Time played (Comp)
 /*
@@ -107,49 +169,23 @@ Array.from(
 })();
 */
 
-const OverScrap = async (
-  username: string,
-  hashtag: string,
-  platform: string,
-  test?: string
-): Promise<User> => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  const url = `https://playoverwatch.com/en-us/career/${platform}/${username}-${hashtag}/`;
-  if (test) {
-    await page.setContent(test);
-  } else {
-    await page.goto(url);
-  }
+// Get sr data for each role
+/*
+  Array.from(document.querySelectorAll("div.masthead-player div.competitive-rank-role")).map(rank => ({
+    src: rank.querySelector("img.competitive-rank-tier-icon").src,
+    role: rank.querySelector("span.ow-Tooltip").innerText,
+    sr: rank.querySelector("div.competitive-rank-level").innerText
+  }))
+*/
 
-  const ranks: Rank[] = await page.evaluate(() => {
-    return Array.from(
-      document.querySelectorAll(
-        'div.masthead-player div.competitive-rank-role'
-      ),
-      (rank) => ({
-        src: rank?.querySelector<HTMLInputElement>(
-          'img.competitive-rank-tier-icon'
-        )?.src,
-        role: rank
-          ?.querySelector<HTMLInputElement>('span.ow-Tooltip')
-          ?.innerText.replace(/ .*/, ''),
-        sr: rank?.querySelector<HTMLInputElement>('div.competitive-rank-level')
-          ?.innerText
-      })
-    );
-  });
-
-  await browser.close();
-
-  return {
-    username,
-    hashtag,
-    compTime: '',
-    ranks,
-    games: [],
-    topThree: []
-  };
-};
-
-export default OverScrap;
+// Get top 3 heroes
+/*
+Array.from(document.querySelectorAll("div#competitive div.progress-category-item"))
+  .slice(0, 3)
+  .map(hero => ({
+    src: hero.querySelector("img.ProgressBar-thumb").src,
+    name: hero.querySelector("div.ProgressBar-title").innerText,
+    timePlayed: hero.querySelector("div.ProgressBar-description").innerText
+  })
+)
+*/

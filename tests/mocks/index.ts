@@ -3,7 +3,7 @@ import { User } from '../../src/types';
 export const GorillaPunch: User = {
   username: 'GorillaPunch',
   hashtag: '21397',
-  compTime: '05:02:36',
+  compTime: ['Time Played', '05:51:42'],
   ranks: [
     {
       src: '',
