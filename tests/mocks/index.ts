@@ -17,27 +17,29 @@ export const GorillaPunch: User = {
     },
     {
       detail: 'Games Lost',
+      value: '16'
+    },
+    {
+      detail: 'Games Won',
       value: '13'
     },
     {
       detail: 'Games Played',
-      value: '26'
-    },
-    {
-      detail: 'Games Won',
-      value: '12'
+      value: '30'
     }
   ],
   topThree: [
     {
-      src:
-        'https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000023B.png',
+      src: '',
       name: 'Sigma',
-      timePlayed: '01:51:14',
       info: [
         {
+          detail: 'Time Played',
+          value: '02:02:00'
+        },
+        {
           detail: 'Games Played',
-          value: '13'
+          value: '11'
         },
         {
           detail: 'Win Percentage',
@@ -46,36 +48,50 @@ export const GorillaPunch: User = {
       ]
     },
     {
-      src:
-        'https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000009.png',
+      src: '',
       name: 'Winston',
-      timePlayed: '01:01:08',
       info: [
         {
+          detail: 'Time Played',
+          value: '01:21:48'
+        },
+        {
           detail: 'Games Played',
-          value: '5'
+          value: '6'
         },
         {
           detail: 'Win Percentage',
-          value: '37%'
+          value: '32%'
         }
       ]
     },
     {
-      src:
-        'https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000007.png',
+      src: '',
       name: 'Reinhardt',
-      timePlayed: '35:38',
       info: [
+        {
+          detail: 'Time Played',
+          value: '43:09'
+        },
         {
           detail: 'Games Played',
           value: '3'
         },
         {
           detail: 'Win Percentage',
-          value: '41%'
+          value: '34%'
         }
       ]
     }
+  ],
+  mapHeroes: [
+    { id: '0x02E000000000007A', name: 'D.Va' },
+    { id: '0x02E000000000013E', name: 'Orisa' },
+    { id: '0x02E0000000000007', name: 'Reinhardt' },
+    { id: '0x02E0000000000040', name: 'Roadhog' },
+    { id: '0x02E000000000023B', name: 'Sigma' },
+    { id: '0x02E0000000000009', name: 'Winston' },
+    { id: '0x02E00000000001CA', name: 'Wrecking Ball' },
+    { id: '0x02E0000000000068', name: 'Zarya' }
   ]
 };

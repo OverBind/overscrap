@@ -4,6 +4,7 @@ export type User = {
   ranks: Rank[];
   info: Info[];
   topThree: Hero[];
+  mapHeroes: HeroDetail[];
 };
 
 export type Rank = {
@@ -20,6 +21,10 @@ export type Info = {
 export type Hero = {
   src?: string;
   name?: string;
-  timePlayed?: string;
   info?: Info[];
+};
+
+export type HeroDetail = {
+  id: string | null;
+  name: string;
 };

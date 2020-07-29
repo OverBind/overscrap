@@ -17,7 +17,6 @@ describe('Retrieve player data from the overwatch website', () => {
       'pc',
       GorillaPunchHtml
     );
-    console.log(scrapPlayer);
-    expect(scrapPlayer).toMatchObject(GorillaPunch);
+    expect(scrapPlayer).toStrictEqual(GorillaPunch);
   });
 });
