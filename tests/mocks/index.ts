@@ -85,6 +85,7 @@ export const GorillaPunch: User = {
     }
   ],
   mapHeroes: [
+    { id: '0x02E00000FFFFFFFF', name: 'ALL HEROES' },
     { id: '0x02E000000000007A', name: 'D.Va' },
     { id: '0x02E000000000013E', name: 'Orisa' },
     { id: '0x02E0000000000007', name: 'Reinhardt' },

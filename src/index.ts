@@ -70,9 +70,7 @@ const OverScrap = async (
       id: option.getAttribute('value'),
       name: option.innerHTML
     }));
-    heroes.pop();
-    heroes.shift();
-    return heroes;
+    return heroes.filter((hero) => hero.id);
   });
 
   // Get top three most played heroes this season

@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Retrieve player data from the overwatch website Should get player "FusGaar" 1`] = `
+Object {
+  "hashtag": "1912",
+  "info": Array [
+    Object {
+      "detail": "Time Played",
+      "value": "10:03:20",
+    },
+    Object {
+      "detail": "Games Lost",
+      "value": "25",
+    },
+    Object {
+      "detail": "Games Won",
+      "value": "21",
+    },
+    Object {
+      "detail": "Games Played",
+      "value": "48",
+    },
+  ],
+  "mapHeroes": Array [
+    Object {
+      "id": "0x02E00000FFFFFFFF",
+      "name": "ALL HEROES",
+    },
+    Object {
+      "id": "0x02E0000000000221",
+      "name": "Baptiste",
+    },
+    Object {
+      "id": "0x02E0000000000195",
+      "name": "Brigitte",
+    },
+    Object {
+      "id": "0x02E000000000007A",
+      "name": "D.Va",
+    },
+    Object {
+      "id": "0x02E0000000000079",
+      "name": "Lúcio",
+    },
+    Object {
+      "id": "0x02E000000000013E",
+      "name": "Orisa",
+    },
+    Object {
+      "id": "0x02E0000000000007",
+      "name": "Reinhardt",
+    },
+    Object {
+      "id": "0x02E0000000000040",
+      "name": "Roadhog",
+    },
+    Object {
+      "id": "0x02E000000000023B",
+      "name": "Sigma",
+    },
+    Object {
+      "id": "0x02E0000000000009",
+      "name": "Winston",
+    },
+    Object {
+      "id": "0x02E00000000001CA",
+      "name": "Wrecking Ball",
+    },
+    Object {
+      "id": "0x02E0000000000068",
+      "name": "Zarya",
+    },
+    Object {
+      "id": "0x02E0000000000020",
+      "name": "Zenyatta",
+    },
+  ],
+  "ranks": Array [
+    Object {
+      "role": "Tank",
+      "sr": "3438",
+      "src": "",
+    },
+    Object {
+      "role": "Support",
+      "sr": "2626",
+      "src": "",
+    },
+  ],
+  "topThree": Array [
+    Object {
+      "info": Array [
+        Object {
+          "detail": "Time Played",
+          "value": "05:42:26",
+        },
+        Object {
+          "detail": "Games Played",
+          "value": "26",
+        },
+        Object {
+          "detail": "Win Percentage",
+          "value": "53%",
+        },
+      ],
+      "name": "Reinhardt",
+      "src": "",
+    },
+    Object {
+      "info": Array [
+        Object {
+          "detail": "Time Played",
+          "value": "02:12:18",
+        },
+        Object {
+          "detail": "Games Played",
+          "value": "11",
+        },
+        Object {
+          "detail": "Win Percentage",
+          "value": "52%",
+        },
+      ],
+      "name": "Winston",
+      "src": "",
+    },
+    Object {
+      "info": Array [
+        Object {
+          "detail": "Time Played",
+          "value": "31:33",
+        },
+        Object {
+          "detail": "Games Played",
+          "value": "3",
+        },
+        Object {},
+      ],
+      "name": "Sigma",
+      "src": "",
+    },
+  ],
+  "username": "FusGaar",
+}
+`;
+
+exports[`Retrieve player data from the overwatch website Should get player "Punk" 1`] = `
+Object {
+  "hashtag": "11600",
+  "info": Array [
+    Object {
+      "detail": "Time Played",
+      "value": "35:00:52",
+    },
+    Object {
+      "detail": "Games Lost",
+      "value": "76",
+    },
+    Object {
+      "detail": "Games Won",
+      "value": "101",
+    },
+    Object {
+      "detail": "Games Played",
+      "value": "177",
+    },
+  ],
+  "mapHeroes": Array [
+    Object {
+      "id": "0x02E00000FFFFFFFF",
+      "name": "ALL HEROES",
+    },
+    Object {
+      "id": "0x02E000000000013B",
+      "name": "Ana",
+    },
+    Object {
+      "id": "0x02E0000000000200",
+      "name": "Ashe",
+    },
+    Object {
+      "id": "0x02E0000000000221",
+      "name": "Baptiste",
+    },
+    Object {
+      "id": "0x02E0000000000195",
+      "name": "Brigitte",
+    },
+    Object {
+      "id": "0x02E000000000007A",
+      "name": "D.Va",
+    },
+    Object {
+      "id": "0x02E0000000000029",
+      "name": "Genji",
+    },
+    Object {
+      "id": "0x02E0000000000079",
+      "name": "Lúcio",
+    },
+    Object {
+      "id": "0x02E0000000000042",
+      "name": "McCree",
+    },
+    Object {
+      "id": "0x02E00000000001A2",
+      "name": "Moira",
+    },
+    Object {
+      "id": "0x02E000000000013E",
+      "name": "Orisa",
+    },
+    Object {
+      "id": "0x02E0000000000007",
+      "name": "Reinhardt",
+    },
+    Object {
+      "id": "0x02E0000000000040",
+      "name": "Roadhog",
+    },
+    Object {
+      "id": "0x02E000000000023B",
+      "name": "Sigma",
+    },
+    Object {
+      "id": "0x02E0000000000003",
+      "name": "Tracer",
+    },
+    Object {
+      "id": "0x02E000000000000A",
+      "name": "Widowmaker",
+    },
+    Object {
+      "id": "0x02E0000000000009",
+      "name": "Winston",
+    },
+    Object {
+      "id": "0x02E00000000001CA",
+      "name": "Wrecking Ball",
+    },
+    Object {
+      "id": "0x02E0000000000068",
+      "name": "Zarya",
+    },
+    Object {
+      "id": "0x02E0000000000020",
+      "name": "Zenyatta",
+    },
+  ],
+  "ranks": Array [
+    Object {
+      "role": "Tank",
+      "sr": "4685",
+      "src": "",
+    },
+    Object {
+      "role": "Damage",
+      "sr": "3885",
+      "src": "",
+    },
+    Object {
+      "role": "Support",
+      "sr": "3900",
+      "src": "",
+    },
+  ],
+  "topThree": Array [
+    Object {
+      "info": Array [
+        Object {
+          "detail": "Time Played",
+          "value": "20:08:31",
+        },
+        Object {
+          "detail": "Games Played",
+          "value": "100",
+        },
+        Object {
+          "detail": "Win Percentage",
+          "value": "59%",
+        },
+      ],
+      "name": "Sigma",
+      "src": "",
+    },
+    Object {
+      "info": Array [
+        Object {
+          "detail": "Time Played",
+          "value": "05:09:01",
+        },
+        Object {
+          "detail": "Games Played",
+          "value": "27",
+        },
+        Object {
+          "detail": "Win Percentage",
+          "value": "56%",
+        },
+      ],
+      "name": "D.Va",
+      "src": "",
+    },
+    Object {
+      "info": Array [
+        Object {
+          "detail": "Time Played",
+          "value": "02:59:28",
+        },
+        Object {
+          "detail": "Games Played",
+          "value": "15",
+        },
+        Object {
+          "detail": "Win Percentage",
+          "value": "62%",
+        },
+      ],
+      "name": "Zarya",
+      "src": "",
+    },
+  ],
+  "username": "Punk",
+}
+`;
