@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Scrapping player stats from the official blizzzard overwatch website",
   "main": "jest.config.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "tsc",
