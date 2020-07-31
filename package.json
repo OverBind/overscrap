@@ -1,5 +1,5 @@
 {
-  "name": "overscrap",
+  "name": "@overbind/overscrap",
   "version": "1.0.0",
   "description": "Scrapping player stats from the official blizzzard overwatch website",
   "main": "jest.config.js",
