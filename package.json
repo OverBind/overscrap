@@ -14,7 +14,8 @@
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:fix": "jest --runInBand --detectOpenHandles"
+    "test:fix": "jest --runInBand --detectOpenHandles",
+    "doc": "typedoc --out docs src"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.1",
+    "typedoc": "^0.18.0",
     "typescript": "^3.9.5"
   },
   "dependencies": {

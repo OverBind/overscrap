@@ -26,6 +26,19 @@ const HERO_DATA_ARRAY = [
   HERO_WIN_PERCENTAGE
 ];
 
+/**
+ * Retrieve the data from the overwatch website
+ *
+ * @remarks
+ * Using puppeter
+ *
+ * @param username - username of the player in game
+ * @param hashtag - hashtag of the player in game
+ * @param platform - the platform the player plays on (eg: pc, xbox, ect..)
+ * @param test - pass an html file for better performance and having the same data at each test
+ *
+ * @returns User type object
+ */
 const OverScrap = async (
   username: string,
   hashtag: string,
