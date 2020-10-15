@@ -1,5 +1,4 @@
 import puppeteer from 'puppeteer';
-
 import { User, Rank, Hero, Info, HeroDetail } from './types';
 
 const HERO_GAME_LOST = '0x0860000000000430';

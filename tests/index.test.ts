@@ -1,9 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-
 import OverScrap from '../src';
-
-import { GorillaPunch } from './mocks';
+import { GorillaPunch } from './mocks/users';
 
 describe('Retrieve player data from the overwatch website', () => {
   test('Should get player "GorillaPunch"', async () => {
