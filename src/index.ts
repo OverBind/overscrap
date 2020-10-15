@@ -131,7 +131,7 @@ const OverScrap = async (
     mapHeroes
   );
 
-  // Get competive time played time
+  // Get competitive time played time
   const info: Info[] = await page.evaluate((COMP_DATA_ARRAY) => {
     return COMP_DATA_ARRAY.map((dataId: string) => {
       const row = Array.from(
