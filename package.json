@@ -1,6 +1,6 @@
 {
   "name": "@overbind/overscrap",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Scrapping player stats from the official blizzzard overwatch website",
   "main": "jest.config.js",
   "publishConfig": {
@@ -28,19 +28,19 @@
   },
   "homepage": "https://github.com/OverBind/OverScrap#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.3",
-    "@types/puppeteer": "^3.0.1",
-    "@typescript-eslint/eslint-plugin": "^3.4.0",
-    "@typescript-eslint/parser": "^3.4.0",
-    "eslint": "^7.3.1",
-    "jest": "^26.1.0",
+    "@types/jest": "^27.0.3",
+    "@types/puppeteer": "^5.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.5.0",
+    "jest": "^27.4.5",
     "prettier": "^2.0.5",
-    "ts-jest": "^26.1.1",
-    "typedoc": "^0.18.0",
-    "typescript": "^3.9.5"
+    "ts-jest": "^27.1.2",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.4"
   },
   "dependencies": {
-    "puppeteer": "^5.2.0",
-    "puppeteer-core": "^5.2.1"
+    "puppeteer": "^13.0.0",
+    "puppeteer-core": "^13.0.0"
   }
 }
