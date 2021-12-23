@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get player stat Should get player stat 1`] = `
+Array [
+  Object {
+    "role": "Tank",
+    "sr": "2918",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/rank-icons/rank-PlatinumTier.png",
+  },
+]
+`;

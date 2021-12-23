@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get Heroes Should get heroes data 1`] = `
+Array [
+  Object {
+    "id": "0x02E000000000007A",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "4",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "10",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "5",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "01:35:53",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "54%",
+      },
+    ],
+    "name": "D.Va",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000007A.png",
+  },
+  Object {
+    "id": "0x02E000000000013E",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "2",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "6",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "4",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "01:15:58",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "62%",
+      },
+    ],
+    "name": "Orisa",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000013E.png",
+  },
+  Object {
+    "id": "0x02E0000000000007",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "10",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "20",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "10",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "03:40:57",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "51%",
+      },
+    ],
+    "name": "Reinhardt",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000007.png",
+  },
+  Object {
+    "id": "0x02E0000000000040",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "6",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "15",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "8",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "02:26:14",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "57%",
+      },
+    ],
+    "name": "Roadhog",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000040.png",
+  },
+  Object {
+    "id": "0x02E000000000023B",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "8",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "14",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "6",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "02:52:11",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "41%",
+      },
+    ],
+    "name": "Sigma",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000023B.png",
+  },
+  Object {
+    "id": "0x02E0000000000009",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "5",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "13",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "8",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "02:30:04",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "62%",
+      },
+    ],
+    "name": "Winston",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000009.png",
+  },
+  Object {
+    "id": "0x02E00000000001CA",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "5",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "9",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "3",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "01:31:47",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "38%",
+      },
+    ],
+    "name": "Wrecking Ball",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E00000000001CA.png",
+  },
+  Object {
+    "id": "0x02E0000000000068",
+    "info": Array [
+      Object {
+        "name": "Games Lost",
+        "value": "2",
+      },
+      Object {
+        "name": "Games Played",
+        "value": "3",
+      },
+      Object {
+        "name": "Games Won",
+        "value": "1",
+      },
+      Object {
+        "name": "Time Played",
+        "value": "32:15",
+      },
+      Object {
+        "name": "Win Percentage",
+        "value": "28%",
+      },
+    ],
+    "name": "Zarya",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000068.png",
+  },
+]
+`;

@@ -1,30 +1,26 @@
-export type User = {
-  username: string;
-  hashtag: string;
-  ranks: Rank[];
-  info: Info[];
-  topThree: Hero[];
-  mapHeroes: HeroDetail[];
-};
-
 export type Rank = {
   src?: string;
   role?: string;
   sr?: string;
 };
 
-export type Info = {
-  detail: string;
+export type InfoField = {
+  name: string;
   value: string;
 };
 
 export type Hero = {
+  id: string;
   src?: string;
   name?: string;
-  info?: Info[];
+  info?: InfoField[];
 };
 
-export type HeroDetail = {
-  id: string | null;
-  name: string;
+export type User = {
+  username: string;
+  hashtag: string;
+  ranks: Rank[];
+  info: InfoField[];
+  heroes: Hero[];
 };
+

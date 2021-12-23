@@ -12,8 +12,7 @@
     "build:watch": "tsc --watch",
     "lint": "eslint src/ --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "NODE_ENV=test jest",
     "test:fix": "jest --runInBand --detectOpenHandles",
     "doc": "typedoc --out docs src"
   },

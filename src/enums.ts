@@ -6,7 +6,7 @@ export enum HeroStat {
     WIN_PERCENTAGE = '0x08600000000003D1',
 }
 
-export enum CompStat {
+export enum GameStat {
     TIME_PLAY = '0x0860000000000026',
     GAME_LOST = '0x086000000000042E',
     GAME_WON = '0x08600000000003F5',
