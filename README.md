@@ -13,7 +13,7 @@ const scrapPlayer = await OverScrap('username', 'tag', 'platform');
 Result
 ```snap
 Object {
-  "username": "FusGaar",
+  "username": "username",
   "hashtag": "1912",
   "heroes": Array [
     Object {
