@@ -2,11 +2,10 @@
   "name": "@overbind/overscrap",
   "version": "0.1.0",
   "description": "Modern API to fetch player data from the official Overwatch website.",
-  "main": "jest.config.js",
+  "main": "lib/index.js",
   "scripts": {
     "prebuild": "rimraf lib",
-    "build": "tsc --declaration",
-    "build:watch": "tsc --declaration --watch",
+    "build": "tsc",
     "lint": "eslint src/ --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "test": "NODE_ENV=test jest",
