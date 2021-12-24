@@ -1,4 +1,4 @@
-import OverScrap from '../../src';
+import { OverScrap } from '../../src';
 
 describe('Overscrap Class', () => {
   test('Should instantiate a new class object', async () => {

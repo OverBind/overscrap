@@ -4,19 +4,7 @@ import path from 'path';
 import { GameStat, HeroStat, Heroes } from './enums';
 import { Rank, InfoField, Hero } from './types';
 
-/**
- * Retrieve the data from the overwatch website
- *
- * @remarks
- * Using puppeter
- *
- * @param username - username of the player in game
- * @param hashtag - hashtag of the player in game
- * @param platform - the platform the player plays on (eg: pc, xbox, ect..)
- *
- * @returns User type object
- */
-class OverScrap {
+export class OverScrap {
   private _page: puppeteer.Page;
 
   constructor(page: puppeteer.Page) {
@@ -141,5 +129,3 @@ class OverScrap {
     );
   }
 }
-
-export default OverScrap;

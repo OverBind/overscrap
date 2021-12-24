@@ -6,70 +6,15 @@ Using `typescript` and `puppeteer`.
 
 ## API
 
-Example
+Create an instance
 ```typescript
-const scrapPlayer = await OverScrap('username', 'tag', 'platform');
+const scrapPlayer = await OverScrap.build('FusGaar', '1912', 'pc');
 ```
-Result
-```snap
-Object {
-  "username": "username",
-  "hashtag": "1912",
-  "heroes": Array [
-    Object {
-      "id": "0x02E000000000007A",
-      "info": Array [
-        Object {
-          "name": "Games Lost",
-          "value": "4",
-        },
-        Object {
-          "name": "Games Played",
-          "value": "10",
-        },
-        Object {
-          "name": "Games Won",
-          "value": "5",
-        },
-        Object {
-          "name": "Time Played",
-          "value": "01:35:53",
-        },
-        Object {
-          "name": "Win Percentage",
-          "value": "54%",
-        },
-      ],
-      "name": "D.Va",
-      "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E000000000007A.png",
-    }
-  ],
-  "info": Array [
-    Object {
-      "name": "Time Played",
-      "value": "16:25:18",
-    },
-    Object {
-      "name": "Games Lost",
-      "value": "43",
-    },
-    Object {
-      "name": "Games Won",
-      "value": "45",
-    },
-    Object {
-      "name": "Games Played",
-      "value": "89",
-    },
-  ],
-  "ranks": Array [
-    Object {
-      "role": "Tank",
-      "sr": "2918",
-      "src": "https://d1u1mce87gyfbn.cloudfront.net/game/rank-icons/rank-PlatinumTier.png",
-    },
-  ],
-}
+
+Example on how to retrieve data
+```typescript
+const scrapPlayer = await OverScrap.build('FusGaar', '1912', 'pc');
+const ranks = await scrapPlayer.getRanks();
 ```
 
 ## Contribute
