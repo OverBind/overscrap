@@ -5,14 +5,20 @@
 <p>Modern API to fetch player data from the official Overwatch website.</p>
 <p>Using <code>typescript</code> and <code>puppeteer</code>.</p>
 
+<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+  <h2>Install</h2>
+</a>
+<pre><code class="language-bash"><span class="hl-0">npm i @overbind/overscrap</span>
+</code></pre>
+
 <a href="#api" id="api" style="color: inherit; text-decoration: none;">
   <h2>API</h2>
 </a>
 <p>Create an instance</p>
-<pre><code class="language-typescript"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">scrapPlayer</span><span class="hl-1"> = </span><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-4">OverScrap</span><span class="hl-1">.</span><span class="hl-5">build</span><span class="hl-1">(</span><span class="hl-6">&#39;FusGaar&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;1912&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;pc&#39;</span><span class="hl-1">);</span>
+<pre><code class="language-typescript"><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">scrapPlayer</span><span class="hl-0"> = </span><span class="hl-3">await</span><span class="hl-0"> </span><span class="hl-4">OverScrap</span><span class="hl-0">.</span><span class="hl-5">build</span><span class="hl-0">(</span><span class="hl-6">&#39;FusGaar&#39;</span><span class="hl-0">, </span><span class="hl-6">&#39;1912&#39;</span><span class="hl-0">, </span><span class="hl-6">&#39;pc&#39;</span><span class="hl-0">);</span>
 </code></pre>
 <p>Example on how to retrieve data</p>
-<pre><code class="language-typescript"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">scrapPlayer</span><span class="hl-1"> = </span><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-4">OverScrap</span><span class="hl-1">.</span><span class="hl-5">build</span><span class="hl-1">(</span><span class="hl-6">&#39;FusGaar&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;1912&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;pc&#39;</span><span class="hl-1">);</span><br/><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">ranks</span><span class="hl-1"> = </span><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-4">scrapPlayer</span><span class="hl-1">.</span><span class="hl-5">getRanks</span><span class="hl-1">();</span>
+<pre><code class="language-typescript"><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">scrapPlayer</span><span class="hl-0"> = </span><span class="hl-3">await</span><span class="hl-0"> </span><span class="hl-4">OverScrap</span><span class="hl-0">.</span><span class="hl-5">build</span><span class="hl-0">(</span><span class="hl-6">&#39;FusGaar&#39;</span><span class="hl-0">, </span><span class="hl-6">&#39;1912&#39;</span><span class="hl-0">, </span><span class="hl-6">&#39;pc&#39;</span><span class="hl-0">);</span><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">ranks</span><span class="hl-0"> = </span><span class="hl-3">await</span><span class="hl-0"> </span><span class="hl-4">scrapPlayer</span><span class="hl-0">.</span><span class="hl-5">getRanks</span><span class="hl-0">();</span>
 </code></pre>
 
 <a href="#contribute" id="contribute" style="color: inherit; text-decoration: none;">

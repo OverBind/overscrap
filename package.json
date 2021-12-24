@@ -1,11 +1,8 @@
 {
   "name": "@overbind/overscrap",
   "version": "0.1.0",
-  "description": "Scrapping player stats from the official blizzzard overwatch website",
+  "description": "Modern API to fetch player data from the official Overwatch website.",
   "main": "jest.config.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "tsc --declaration",

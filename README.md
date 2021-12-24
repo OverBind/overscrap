@@ -4,6 +4,12 @@ Modern API to fetch player data from the official Overwatch website.
 
 Using `typescript` and `puppeteer`.
 
+## Install
+
+```bash
+npm i @overbind/overscrap
+``` 
+
 ## API
 
 Create an instance
