@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Get Heroes Should get heroes data 1`] = `
+exports[`Overscrap Class Should get player heroes 1`] = `
 Array [
   Object {
     "id": "0x02E000000000007A",
@@ -217,6 +217,37 @@ Array [
     ],
     "name": "Zarya",
     "src": "https://d1u1mce87gyfbn.cloudfront.net/game/heroes/small/0x02E0000000000068.png",
+  },
+]
+`;
+
+exports[`Overscrap Class Should get player info 1`] = `
+Array [
+  Object {
+    "name": "Time Played",
+    "value": "16:25:18",
+  },
+  Object {
+    "name": "Games Lost",
+    "value": "43",
+  },
+  Object {
+    "name": "Games Won",
+    "value": "45",
+  },
+  Object {
+    "name": "Games Played",
+    "value": "89",
+  },
+]
+`;
+
+exports[`Overscrap Class Should get player ranks 1`] = `
+Array [
+  Object {
+    "role": "Tank",
+    "sr": "2918",
+    "src": "https://d1u1mce87gyfbn.cloudfront.net/game/rank-icons/rank-PlatinumTier.png",
   },
 ]
 `;

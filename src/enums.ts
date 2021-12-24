@@ -13,7 +13,7 @@ export enum GameStat {
     GAME_TOTAL = '0x0860000000000385',
 }
 
-export enum HeroID {
+export enum Heroes {
     ALL_HEROES = "0x02E00000FFFFFFFF",
     ANA = "0x02E000000000013B",
     ASHE = "0x02E0000000000200",

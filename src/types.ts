@@ -15,12 +15,3 @@ export type Hero = {
   name?: string;
   info?: InfoField[];
 };
-
-export type User = {
-  username: string;
-  hashtag: string;
-  ranks: Rank[];
-  info: InfoField[];
-  heroes: Hero[];
-};
-
