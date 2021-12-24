@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "tsc",
+    "install": "npm run build",
     "lint": "eslint src/ --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "test": "NODE_ENV=test jest",
