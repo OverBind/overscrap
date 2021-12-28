@@ -4,7 +4,7 @@ export default {
   input: 'src/index.ts',
   output: {
     sourcemap: true,
-    file: 'dist/index.mjs',
+    file: 'dist/index.js',
   },
   plugins: [typescript({ tsconfig: './tsconfig.json' })]
 };
