@@ -2,7 +2,7 @@
   "name": "@overbind/overscrap",
   "version": "0.1.4",
   "description": "Modern API to fetch player data from the official Overwatch website.",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "files": [
     "dist"
   ],
