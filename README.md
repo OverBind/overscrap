@@ -25,6 +25,6 @@ const ranks = await scrapPlayer.getRanks();
 
 ## Contribute
 
-At this current time the API is primitive at this point, so any issue or PRs are welcome.
+At this current time the API is primitive, so any issue or PRs are welcome.
 
 No contribution rules has been set yet.
